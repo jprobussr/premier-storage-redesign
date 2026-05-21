@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 4rem;
+}
+
+

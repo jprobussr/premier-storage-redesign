@@ -1,10 +1,28 @@
-import React from 'react';
+import './App.css';
 
 const App = () => {
   return (
-    <main className="page">
-      <h1>Premier Storage Redesign</h1>
-    </main>
+    <>
+      <header className="site-header">Header</header>
+
+      <main className="app">
+        <section className="hero section">
+          <div className="container">Hero</div>
+        </section>
+
+        <section className="features section">
+          <div className="container">Features</div>
+        </section>
+
+        <section className="unit-sizes section">
+          <div className="container">Unit Sizes</div>
+        </section>
+
+      
+      </main>
+
+      <footer className="site-footer">Contact</footer>
+    </>
   );
 };
 
