@@ -1,0 +1,42 @@
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.location h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.location-text {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.location-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.location-card h3 {
+  margin-top: 0;
+}
+
+.location-card p {
+  margin: 0.75rem 0;
+  color: var(--muted);
+}
+
+.location-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 700;
+}

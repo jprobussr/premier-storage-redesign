@@ -3,6 +3,7 @@ import Features from './components/Features.jsx';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import UnitSizes from './components/UnitSizes.jsx';
+import Location from './components/Location.jsx';
 
 const App = () => {
   return (
@@ -17,9 +18,8 @@ const App = () => {
 
        <UnitSizes />
 
-        <section className="location section" id="location">
-          <div className="container">Location</div>
-        </section>
+      <Location />
+       
       </main>
 
       <footer className="site-footer" id="contact">
