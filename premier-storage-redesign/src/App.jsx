@@ -2,6 +2,7 @@ import './App.css';
 import Features from './components/Features.jsx';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
+import UnitSizes from './components/UnitSizes.jsx';
 
 const App = () => {
   return (
@@ -14,9 +15,7 @@ const App = () => {
 
         <Features />
 
-        <section className="unit-sizes section" id="units">
-          <div className="container">Unit Sizes</div>
-        </section>
+       <UnitSizes />
 
         <section className="location section" id="location">
           <div className="container">Location</div>
