@@ -11,4 +11,16 @@
   padding-block: 4rem;
 }
 
+.section-header {
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
 
