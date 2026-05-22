@@ -1,5 +1,7 @@
 import './App.css';
+import Features from './components/Features.jsx';
 import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
 
 const App = () => {
   return (
@@ -7,13 +9,10 @@ const App = () => {
       <Header />
 
       <main className="app">
-        <section className="hero section" id="top">
-          <div className="container">Hero</div>
-        </section>
+        
+        <Hero />
 
-        <section className="features section" id="features">
-          <div className="container">Features</div>
-        </section>
+        <Features />
 
         <section className="unit-sizes section" id="units">
           <div className="container">Unit Sizes</div>
