@@ -1,10 +1,9 @@
 import './Hero.css';
-
-import React from 'react';
+import storageBuilding from '../assets/premier-storage-image.jpg';
 
 const Hero = () => {
   return (
-    <section className="hero section" id="top">
+    <section className="hero section" id="top" style={{backgroundImage: `url(${storageBuilding})`}}>
       <div className="container">
         <div className="hero-content">
           <p className="eyebrow">Climate-Controlled Storage</p>
@@ -14,8 +13,12 @@ const Hero = () => {
             flexible unit sizes, and local customer support.
           </p>
           <div className="hero-actions">
-            <a href="#contact" className='button button-primary'>Contact Us</a>
-            <a href="#units" className='button button-secondary'>View Unit Sizes</a>
+            <a href="#contact" className="button button-primary">
+              Contact Us
+            </a>
+            <a href="#units" className="button button-secondary">
+              View Unit Sizes
+            </a>
           </div>
         </div>
       </div>

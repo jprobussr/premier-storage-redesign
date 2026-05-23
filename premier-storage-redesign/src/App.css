@@ -47,7 +47,8 @@
 }
 
 .button-secondary {
-  border: 1px solid var(--border);
+  border: 1px solid rgba(248, 250, 252, 0.3);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 
