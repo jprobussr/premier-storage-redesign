@@ -21,11 +21,22 @@
 
 .gallery-card img {
   width: 100%;
-  height: 260px;
+  height: 280px;
   object-fit: cover;
   transition: transform 300ms ease;
 }
 
 .gallery-card:hover img {
   transform: scale(1.03);
+}
+
+.gallery-card:first-child {
+    grid-column: span 2;
+}
+
+
+@media (max-width: 768px) {
+    .gallery-card:first-child {
+        grid-column: span 1;
+    }
 }
