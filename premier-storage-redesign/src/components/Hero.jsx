@@ -14,8 +14,8 @@ const Hero = () => {
             flexible unit sizes, and local customer support.
           </p>
           <div className="hero-actions">
-            <a href="#contact">Contact Us</a>
-            <a href="#units">View Unit Sizes</a>
+            <a href="#contact" className='button button-primary'>Contact Us</a>
+            <a href="#units" className='button button-secondary'>View Unit Sizes</a>
           </div>
         </div>
       </div>

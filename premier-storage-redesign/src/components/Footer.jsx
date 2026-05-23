@@ -11,7 +11,7 @@ const Footer = () => {
             access options.
           </p>
         </div>
-        <a href="tel:+12700000000" className="footer-button">
+        <a href="tel:+12700000000" className="button button-primary">
           Call Now
         </a>
       </div>
