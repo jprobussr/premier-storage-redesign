@@ -11,6 +11,7 @@ const Header = () => {
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#features">Features</a>
           <a href="#units">Unit Sizes</a>
+          <a href="#gallery">Gallery</a>
           <a href="#location">Location</a>
           <a href="#contact">Contact</a>
         </nav>
