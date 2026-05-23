@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import UnitSizes from './components/UnitSizes.jsx';
 import Location from './components/Location.jsx';
+import Footer from './components/Footer.jsx';
 
 const App = () => {
   return (
@@ -22,9 +23,7 @@ const App = () => {
        
       </main>
 
-      <footer className="site-footer" id="contact">
-        Contact
-      </footer>
+     <Footer />
     </>
   );
 };
