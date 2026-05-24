@@ -2,22 +2,26 @@ import './UnitSizes.css';
 
 const units = [
   {
-    size: '5 x 5',
-    description: 'Great for boxes, small furniture, and seasonal items.',
-  },
-  {
+    id: 1,
     size: '5 x 10',
-    description: 'Fits the contents of a small bedroom or dorm room.',
+    price: '$65',
+    description: 'Great for boxes, seasonal items, and small furniture.',
+    features: ['Drive-up access', 'Month-to-month rental', 'Secure facility'],
   },
   {
+    id: 2,
     size: '10 x 10',
-    description:
-      'A popular option for apartment furniture and household items.',
+    price: '$95',
+    description: 'Fits the contents of a bedroom or small apartment.',
+    features: ['Popular size', 'Easy access', 'Secure facility'],
+    featured: true,
   },
   {
-    size: '10 x 30',
-    description:
-      'Large storage space for full-home moves or business inventory.',
+    id: 3,
+    size: '10 x 20',
+    price: '$145',
+    description: 'Ideal for larger furniture, equipment, or household storage.',
+    features: ['Large unit', 'Vehicle-friendly', 'Month-to-month rental'],
   },
 ];
 
@@ -30,12 +34,29 @@ const UnitSizes = () => {
           <h2>Choose the space that fits your storage needs.</h2>
         </div>
 
-        <div className="units-grid">
+        <div className="unit-grid">
           {units.map((unit) => {
             return (
-              <article className="unit-card" key={unit.size}>
-                <h3>{unit.size}</h3>
-                <p>{unit.description}</p>
+              <article className={`unit-card ${unit.featured ? 'featured' : ''}`} key={unit.id}>
+                <div className="unit-card-top">
+                  <h3>{unit.size}</h3>
+                  <p>{unit.description}</p>
+                </div>
+
+                <div className="unit-price">
+                  <span>{unit.price}</span>
+                  <small> / month</small>
+                </div>
+
+                <ul className="unit-features">
+                  {unit.features.map((feature) => {
+                    return <li key={feature}>{feature}</li>;
+                  })}
+                </ul>
+
+                <a href="#contact" className="unit-button">
+                  Reserve Unit
+                </a>
               </article>
             );
           })}

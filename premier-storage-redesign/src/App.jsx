@@ -6,6 +6,7 @@ import UnitSizes from './components/UnitSizes.jsx';
 import Location from './components/Location.jsx';
 import Footer from './components/Footer.jsx';
 import Gallery from './components/Gallery.jsx';
+import Stats from './components/Stats.jsx';
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
       <main className="app">
         
         <Hero />
+
+        <Stats />
 
         <Features />
 
