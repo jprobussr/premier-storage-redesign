@@ -57,6 +57,18 @@
   min-height: 120px;
 }
 
+.site-footer .form-success {
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-footer .form-error {
+  margin-top: 1rem;
+  color: #f87171;
+  font-weight: 600;
+}
+
 @media (max-width: 640px) {
   .footer-content {
     flex-direction: column;
