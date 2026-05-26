@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Features from './components/Features.jsx';
 import Header from './components/Header.jsx';
@@ -9,27 +10,26 @@ import Gallery from './components/Gallery.jsx';
 import Stats from './components/Stats.jsx';
 
 const App = () => {
+  const [selectedUnit, setSelectedUnit] = useState(null);
   return (
     <>
       <Header />
 
       <main className="app">
-        
         <Hero />
 
         <Stats />
 
         <Features />
 
-       <UnitSizes />
+        <UnitSizes setSelectedUnit={setSelectedUnit} />
 
-       <Gallery />
+        <Gallery />
 
-      <Location />
-       
+        <Location />
       </main>
 
-     <Footer />
+      <Footer selectedUnit={selectedUnit} />
     </>
   );
 };

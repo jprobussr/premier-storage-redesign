@@ -28,6 +28,35 @@
   white-space: nowrap;
 }
 
+.selected-unit {
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
 @media (max-width: 640px) {
   .footer-content {
     flex-direction: column;

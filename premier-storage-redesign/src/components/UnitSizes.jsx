@@ -25,7 +25,7 @@ const units = [
   },
 ];
 
-const UnitSizes = () => {
+const UnitSizes = ({ setSelectedUnit }) => {
   return (
     <section className="unit-sizes section" id="units">
       <div className="container">
@@ -37,7 +37,10 @@ const UnitSizes = () => {
         <div className="unit-grid">
           {units.map((unit) => {
             return (
-              <article className={`unit-card ${unit.featured ? 'featured' : ''}`} key={unit.id}>
+              <article
+                className={`unit-card ${unit.featured ? 'featured' : ''}`}
+                key={unit.id}
+              >
                 <div className="unit-card-top">
                   <h3>{unit.size}</h3>
                   <p>{unit.description}</p>
@@ -54,9 +57,21 @@ const UnitSizes = () => {
                   })}
                 </ul>
 
-                <a href="#contact" className="unit-button">
+                <button
+                  className="unit-button"
+                  onClick={() => {
+                    setSelectedUnit({
+                      size: unit.size,
+                      price: unit.price,
+                    });
+
+                    document
+                      .getElementById('contact')
+                      ?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   Reserve Unit
-                </a>
+                </button>
               </article>
             );
           })}
